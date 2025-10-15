@@ -437,40 +437,7 @@
         border: none;
     }
 
-       /* ...Mobile devices menu fix... */
-    @media (max-width: 768px) {
-        nav {
-            position: relative;
-        }
-        .nav-links {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: var(--white);
-            padding: 20px;
-            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-            z-index: 1001;
-        }
-        .nav-links.active {
-            display: flex;
-        }
-        .mobile-menu-toggle {
-            display: block !important;
-            position: absolute;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            background: none;
-            border: none;
-            font-size: 2rem;
-            color: var(--primary);
-            z-index: 1002;
-        }
-    }
-/* ...Mobile devices menu fix... */
+
 
     footer {
         background: var(--dark);
@@ -1497,10 +1464,17 @@
         toggle.onclick = () => {
             nav.classList.toggle('active');
         };
-        // Kliknięcie w link - zamknij menu
+        // Kliknięcie w link (ale nie Panel) - zamknij menu
         nav.querySelectorAll('a').forEach(link => {
-            link.onclick = () => {
-                nav.classList.remove('active');
+            // Najpierw usuwamy stare eventy, żeby nie dublować
+            link.removeEventListener('_closeMenu', link._closeMenuHandler || (()=>{}));
+            if (!link.classList.contains('admin-link')) {
+                link._closeMenuHandler = function() {
+                    nav.classList.remove('active');
+                };
+                link.addEventListener('click', link._closeMenuHandler, false);
+                // Oznacz event, by można było go usunąć przy kolejnym wywołaniu
+                link._closeMenu = true;
             };
         });
     } else {
