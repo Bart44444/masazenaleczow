@@ -697,6 +697,7 @@
 .mobile-menu-toggle {
     display: none;
 }
+
 </style>
 ```
 
@@ -715,10 +716,12 @@
                 <li><a href="#gallery">Galeria</a></li>
                 <li><a href="#contact">Kontakt</a></li>
                 <li><a href="#admin" class="admin-link" onclick="openAdminLogin(event)"><i class="fas fa-user-shield"></i> Panel</a></li>
-            </ul>
-            <button class="theme-toggle" onclick="toggleDarkMode()">
-                    <i class="fas fa-moon"></i>
-            </button>
+                <li class="theme-toggle-mobile">
+                    <button class="theme-toggle" onclick="toggleDarkMode()">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>        
         </nav>
     </header>
 
