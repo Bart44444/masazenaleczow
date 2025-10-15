@@ -1439,7 +1439,7 @@
     console.log('%cKod MFA zostanie wygenerowany po zalogowaniu', 'color: #8b7355; font-size: 11px;');
 
     // Mobile menu toggle
-    function createMobileMenu() {
+    /*function createMobileMenu() {
         if (window.innerWidth <= 768) {
             const nav = document.querySelector('.nav-links');
             if (!document.querySelector('.mobile-menu-toggle')) {
@@ -1477,6 +1477,37 @@
 }
     window.addEventListener('resize', createMobileMenu);
     createMobileMenu();
+    */
+   function createMobileMenu() {
+    const nav = document.querySelector('.nav-links');
+    const navParent = document.querySelector('nav');
+    let toggle = document.querySelector('.mobile-menu-toggle');
+
+    if (window.innerWidth <= 768) {
+        if (!toggle) {
+            toggle = document.createElement('button');
+            toggle.className = 'mobile-menu-toggle';
+            toggle.innerHTML = '<i class="fas fa-bars"></i>';
+            toggle.style.cssText = 'background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text);';
+            navParent.appendChild(toggle);
+        }
+        // Hamburger klik - przełącz klasę active
+        toggle.onclick = () => {
+            nav.classList.toggle('active');
+        };
+        // Kliknięcie w link - zamknij menu
+        nav.querySelectorAll('a').forEach(link => {
+            link.onclick = () => {
+                nav.classList.remove('active');
+            };
+        });
+    } else {
+        nav.classList.remove('active');
+        if (toggle) toggle.remove();
+    }
+}
+window.addEventListener('resize', createMobileMenu);
+createMobileMenu();
 
     // Add loading animation
     window.addEventListener('load', () => {
