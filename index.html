@@ -683,9 +683,6 @@
         z-index: 1002;
         cursor: pointer;
     }
-    .theme-toggle {
-        display: none !important;
-    }
     .theme-toggle-mobile {
         display: block;
         text-align: center;
@@ -698,6 +695,9 @@
 }
 
 @media (max-width: 768px) {
+     .theme-toggle {
+        display: none !important;
+    }
     .theme-toggle-mobile {
         display: block;
         text-align: center;
@@ -723,12 +723,15 @@
                 <li><a href="#contact">Kontakt</a></li>
                 <li><a href="#admin" class="admin-link" onclick="openAdminLogin(event)"><i class="fas fa-user-shield"></i> Panel</a></li>
                 <li class="theme-toggle-mobile">
-                    
-                </li>
-                <button class="theme-toggle" onclick="toggleDarkMode()">
+                    <!-- tu będzie przycisk dla mobile -->
+                    <button class="theme-toggle" onclick="toggleDarkMode()">
                         <i class="fas fa-moon"></i>
-                </button>
+                    </button>
+                </li>
             </ul> 
+            <button class="theme-toggle" onclick="toggleDarkMode()">
+                        <i class="fas fa-moon"></i>
+            </button>
         </nav>
     </header>
 
