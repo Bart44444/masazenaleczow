@@ -90,13 +90,13 @@
         color: var(--primary);
     }
 
-    /*.theme-toggle {
+    .theme-toggle {
         background: none;
         border: none;
         font-size: 1.5rem;
         cursor: pointer;
         color: var(--text);
-    }*/
+    }
 
     .admin-link {
         background: var(--accent);
@@ -692,9 +692,11 @@
         margin-top: 10px;
     }
 }
+
 .theme-toggle-mobile {
     display: none;
 }
+
 @media (max-width: 768px) {
     .theme-toggle-mobile {
         display: block;
@@ -721,10 +723,11 @@
                 <li><a href="#contact">Kontakt</a></li>
                 <li><a href="#admin" class="admin-link" onclick="openAdminLogin(event)"><i class="fas fa-user-shield"></i> Panel</a></li>
                 <li class="theme-toggle-mobile">
-                    <button class="theme-toggle" onclick="toggleDarkMode()">
-                        <i class="fas fa-moon"></i>
-                    </button>
+                    
                 </li>
+                <button class="theme-toggle" onclick="toggleDarkMode()">
+                        <i class="fas fa-moon"></i>
+                </button>
             </ul> 
         </nav>
     </header>
