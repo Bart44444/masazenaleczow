@@ -603,7 +603,7 @@
         }
     }
 
-    @media (max-width: 768px) {
+   /* @media (max-width: 768px) {
         .nav-links {
             gap: 1rem;
             font-size: 0.9rem;
@@ -626,7 +626,7 @@
             font-size: 0.9rem;
         }
     }
- 
+    */
     .login-step {
         display: none;
     }
@@ -656,11 +656,6 @@
         display: none;
     }
     @media (max-width: 768px) {
-    .theme-toggle-mobile {
-        display: block;
-        text-align: center;
-        margin-top: 10px;
-    }
     .nav-links {
         display: none;
         flex-direction: column;
@@ -689,6 +684,14 @@
         color: var(--primary);
         z-index: 1002;
         cursor: pointer;
+    }
+    .theme-toggle {
+        display: none !important;
+    }
+    .theme-toggle-mobile {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
     }
 }
 .mobile-menu-toggle {
