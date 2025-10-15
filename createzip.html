@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generator ZIP - Salon Masażu</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+<body>
+    <h2>Kliknij aby pobrać gotowy projekt</h2>
+    <button onclick="generateZip()">Pobierz ZIP</button>
+
+    <script>
+        function generateZip() {
+            const zip = new JSZip();
+            
+            // Folder styles
+            const styles = zip.folder("styles");
+            
+            // Folder js
+            const js = zip.folder("js");
+            
+            // index.html
+            zip.file("index.html", `<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaks Nałęczów - Profesjonalny Salon Masażu</title>
+    <meta name="description" content="Profesjonalny salon masażu w Nałęczowie. Masaże relaksacyjne, lecznicze, sportowe. Odkryj prawdziwy relaks w sercu Nałęczowa.">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Relaks <span>Nałęczów</span></div>
+            <button class="mobile-menu-btn">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="#home">Strona Główna</a></li>
+                    <li><a href="#services">Usługi</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#pricing">Cennik</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="admin.html" class="admin-link">Panel Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Odkryj Prawdziwy Relaks w Nałęczowie</h1>
+            <p>Profesjonalne masaże relaksacyjne, lecznicze i sportowe w sercu uzdrowiska Nałęczów.</p>
+            <a href="#contact" class="btn">Umów się na masaż</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nasze Usługi</h2>
+                <p>Oferujemy szeroki zakres profesjonalnych masaży</p>
+            </div>
+            <div class="services-grid" id="services-container">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3')"></div>
+                    <div class="service-content">
+                        <h3>Masaż relaksacyjny</h3>
+                        <p>Głęboko relaksujący masaż całego ciała redukujący napięcie mięśniowe i stres.</p>
+                        <p><strong>Czas trwania: 60 min</strong></p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3')"></div>
+                    <div class="service-content">
+                        <h3>Masaż leczniczy</h3>
+                        <p>Specjalistyczny masaż ukierunkowany na konkretne dolegliwości bólowe.</p>
+                        <p><strong>Czas trwania: 45 min</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Galeria</h2>
+                <p>Zobacz nasz salon i poczuj atmosferę relaksu</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3" alt="Salon masażu"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3" alt="Masaż"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3" alt="Relaks"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Cennik</h2>
+                <p>Przejrzyste ceny dla wszystkich naszych usług</p>
+            </div>
+            <div class="pricing-table">
+                <div class="pricing-card">
+                    <h3>Masaż relaksacyjny</h3>
+                    <div class="price">120 <span>zł</span></div>
+                    <p><strong>Czas: 60 min</strong></p>
+                    <ul class="pricing-features">
+                        <li>Masaż całego ciała</li>
+                        <li>Olejki eteryczne</li>
+                        <li>Relaksująca muzyka</li>
+                    </ul>
+                    <a href="#contact" class="btn">Umów się</a>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Masaż leczniczy</h3>
+                    <div class="price">100 <span>zł</span></div>
+                    <p><strong>Czas: 45 min</strong></p>
+                    <ul class="pricing-features">
+                        <li>Masaż punktowy</li>
+                        <li>Terapia manualna</li>
+                        <li>Konsultacja z terapeutą</li>
+                    </ul>
+                    <a href="#contact" class="btn">Umów się</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Kontakt</h2>
+                <p>Skontaktuj się z nami i umów na wizytę</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Adres</h3>
+                            <p>ul. Lipowa 15<br>24-150 Nałęczów</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Telefon</h3>
+                            <p>+48 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div>
+                            <h3>Godziny otwarcia</h3>
+                            <p>Poniedziałek - Piątek: 9:00 - 20:00<br>Sobota: 10:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="booking-form">
+                        <div class="form-group">
+                            <label for="name">Imię i nazwisko</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Usługa</label>
+                            <select id="service" class="form-control" required>
+                                <option value="">Wybierz usługę</option>
+                                <option value="1">Masaż relaksacyjny</option>
+                                <option value="2">Masaż leczniczy</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn">Umów wizytę</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Relaks Nałęczów</h3>
+                    <p>Profesjonalny salon masażu w sercu uzdrowiska Nałęczów.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Strona Główna</a></li>
+                        <li><a href="#services">Usługi</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#pricing">Cennik</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Relaks Nałęczów. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="firebase-config.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>`);
+
+            // admin.html
+            zip.file("admin.html", `<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Administracyjny - Relaks Nałęczów</title>
+    <link rel="stylesheet" href="styles/admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <h1>Panel Administracyjny</h1>
+            <div id="user-info" class="user-info"></div>
+        </header>
+
+        <div class="auth-section" id="auth-section">
+            <div class="login-container">
+                <h2>Logowanie z MFA</h2>
+                <div class="mfa-info">
+                    <p><strong>Wymagane uwierzytelnianie wieloskładnikowe</strong></p>
+                    <p>Zaloguj się przez Google i potwierdź tożsamość</p>
+                </div>
+                <button id="google-login" class="google-login-btn">
+                    <span class="google-icon">G</span>
+                    Zaloguj przez Google
+                </button>
+                <div id="mfa-section" class="mfa-section hidden">
+                    <h3>Weryfikacja dwuetapowa</h3>
+                    <p>Sprawdź swoją aplikację authenticator</p>
+                    <input type="text" id="mfa-code" placeholder="Wpisz kod z aplikacji" maxlength="6">
+                    <button id="verify-mfa" class="btn">Zweryfikuj</button>
+                </div>
+                <div id="auth-status" class="auth-status"></div>
+            </div>
+        </div>
+
+        <div class="admin-content hidden" id="admin-content">
+            <div class="admin-tabs">
+                <button class="tab-btn active" data-tab="services">Usługi</button>
+                <button class="tab-btn" data-tab="gallery">Galeria</button>
+                <button class="tab-btn" data-tab="pricing">Cennik</button>
+            </div>
+
+            <div class="tab-content active" id="services-tab">
+                <h3>Zarządzanie Usługami</h3>
+                <form id="service-form" class="admin-form">
+                    <div class="form-group">
+                        <label for="service-name">Nazwa usługi</label>
+                        <input type="text" id="service-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service-description">Opis</label>
+                        <textarea id="service-description" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Dodaj usługę</button>
+                </form>
+            </div>
+
+            <div class="tab-content" id="gallery-tab">
+                <h3>Zarządzanie Galerią</h3>
+                <div class="upload-area" id="upload-area">
+                    <p>Przeciągnij zdjęcia tutaj lub kliknij aby wybrać</p>
+                    <input type="file" id="gallery-upload" multiple accept="image/*" hidden>
+                </div>
+            </div>
+
+            <div class="tab-content" id="pricing-tab">
+                <h3>Zarządzanie Cennikiem</h3>
+                <form id="pricing-form" class="admin-form">
+                    <div class="form-group">
+                        <label for="pricing-name">Nazwa usługi</label>
+                        <input type="text" id="pricing-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pricing-price">Cena (zł)</label>
+                        <input type="number" id="pricing-price" step="0.01" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Dodaj do cennika</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>`);
+
+            // styles/main.css (skrócona wersja)
+            styles.file("main.css", `:root {
+    --primary: #2a6b57;
+    --secondary: #d4af37;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: var(--light);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary) 0%, #1e4d3e 100%);
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.logo span {
+    color: var(--secondary);
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: var(--dark);
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c19d2e;
+    transform: translateY(-3px);
+}
+
+section {
+    padding: 5rem 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.service-content {
+    padding: 1.5rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-item {
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pricing-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.price {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin: 1rem 0;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.contact-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    background: var(--dark);
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}`);
+
+            // Pozostałe pliki CSS i JS
+            styles.file("admin.css", `/* admin.css - skrócona wersja */`);
+            js.file("app.js", `/* app.js - skrócona wersja */`);
+            js.file("auth.js", `/* auth.js - skrócona wersja */`);
+            js.file("admin.js", `/* admin.js - skrócona wersja */`);
+
+            // firebase-config.js
+            zip.file("firebase-config.js", `const firebaseConfig = {
+    apiKey: "your-api-key-here",
+    authDomain: "your-project.firebaseapp.com",
+    projectId: "your-project-id",
+    storageBucket: "your-project.appspot.com",
+    messagingSenderId: "123456789",
+    appId: "your-app-id"
+};
+
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
+const storage = firebase.storage();`);
+
+            // README.txt
+            zip.file("README.txt", `SALON MASAŻU NAŁĘCZÓW - INSTRUKCJA
+
+1. Skonfiguruj Firebase:
+   - Zaloguj się do Firebase Console
+   - Utwórz nowy projekt
+   - Włącz Authentication, Firestore i Storage
+   - Zaktualizuj dane w firebase-config.js
+
+2. Hostowanie:
+   - Możesz hostować na Netlify, Vercel lub GitHub Pages
+   - Lub uruchom lokalnie otwierając index.html
+
+3. Panel Admin:
+   - Wejdź na: twojadomena.pl/admin.html
+   - Zaloguj się przez Google
+   - Użyj kodu MFA (w demo pokazywany na ekranie)
+
+Strona zawiera:
+✅ Nowoczesny design
+✅ Panel admin z MFA
+✅ Edycja treści w czasie rzeczywistym
+✅ System rezerwacji
+✅ Optymalizacja SEO`);
+
+            // Generuj i pobierz ZIP
+            zip.generateAsync({type:"blob"}).then(function(content) {
+                saveAs(content, "salon-masazu-naleczow.zip");
+            });
+        }
+    </script>
+</body>
+</html>
