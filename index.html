@@ -1448,8 +1448,7 @@
                 toggle.innerHTML = '<i class="fas fa-bars"></i>';
                 toggle.style.cssText = 'background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text);';
                 toggle.onclick = () => {
-                    nav.classList.toggle('active');
-                 /* nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+                    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
                     nav.style.flexDirection = 'column';
                     nav.style.position = 'absolute';
                     nav.style.top = '100%';
@@ -1458,7 +1457,7 @@
                     nav.style.background = 'var(--white)';
                     nav.style.padding = '20px';
                     nav.style.boxShadow = '0 5px 10px rgba(0,0,0,0.1)';
-                    */
+                    
                 };
                 document.querySelector('nav').appendChild(toggle);
             }
