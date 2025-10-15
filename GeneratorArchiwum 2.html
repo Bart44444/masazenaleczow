@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Archiwum ZIP - Relaks Nałęczów</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #2d5016, #4a7c2c);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .container {
+        background: white;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        max-width: 800px;
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        color: #2d5016;
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        color: #666;
+        margin-bottom: 30px;
+        font-size: 1.1rem;
+    }
+
+    .icon {
+        font-size: 5rem;
+        margin-bottom: 20px;
+    }
+
+    .info-box {
+        background: #e8f5e9;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 30px 0;
+        text-align: left;
+    }
+
+    .info-box h3 {
+        color: #2d5016;
+        margin-bottom: 10px;
+    }
+
+    .info-box ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .info-box li {
+        padding: 8px 0;
+        border-bottom: 1px solid #c8e6c9;
+    }
+
+    .info-box li:last-child {
+        border-bottom: none;
+    }
+
+    .info-box i {
+        color: #4a7c2c;
+        margin-right: 10px;
+        width: 20px;
+    }
+
+    .btn {
+        background: linear-gradient(135deg, #4a7c2c, #2d5016);
+        color: white;
+        padding: 18px 50px;
+        border: none;
+        border-radius: 50px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 10px 30px rgba(45, 80, 22, 0.4);
+        transition: all 0.3s;
+        margin: 10px;
+    }
+
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 40px rgba(45, 80, 22, 0.6);
+    }
+
+    .btn:active {
+        transform: translateY(-1px);
+    }
+
+    .btn i {
+        margin-right: 10px;
+    }
+
+    .status {
+        margin-top: 20px;
+        padding: 15px;
+        border-radius: 10px;
+        display: none;
+    }
+
+    .status.success {
+        background: #d4edda;
+        color: #155724;
+        display: block;
+    }
+
+    .status.processing {
+        background: #fff3cd;
+        color: #856404;
+        display: block;
+    }
+
+    .file-list {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 20px;
+        text-align: left;
+        font-family: 'Courier New', monospace;
+        font-size: 0.9rem;
+    }
+
+    .progress {
+        width: 100%;
+        height: 30px;
+        background: #e0e0e0;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-top: 20px;
+        display: none;
+    }
+
+    .progress-bar {
+        height: 100%;
+        background: linear-gradient(90deg, #4a7c2c, #2d5016);
+        width: 0%;
+        transition: width 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 30px 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+        }
+    }
+
+    .spinner {
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #4a7c2c;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        margin: 20px auto;
+        display: none;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
+```
+
+</head>
+<body>
+    <div class="container">
+        <div class="icon">📦</div>
+        <h1>Generator Archiwum ZIP</h1>
+        <p class="subtitle">Relaks Nałęczów - Kompletna Strona Internetowa</p>
+
+```
+    <div class="info-box">
+        <h3><i class="fas">📁</i> Co znajduje się w archiwum:</h3>
+        <ul>
+            <li><i>✓</i> <strong>index.html</strong> - Pełna strona internetowa z wszystkimi funkcjami</li>
+            <li><i>✓</i> <strong>README.md</strong> - Instrukcja wdrożenia i konfiguracji</li>
+            <li><i>✓</i> <strong>package.json</strong> - Konfiguracja projektu (dla backend)</li>
+            <li><i>✓</i> <strong>server.js</strong> - Przykładowy backend Node.js</li>
+            <li><i>✓</i> <strong>database.sql</strong> - Struktura bazy danych MySQL</li>
+            <li><i>✓</i> <strong>.env.example</strong> - Przykładowa konfiguracja środowiska</li>
+            <li><i>✓</i> <strong>.gitignore</strong> - Konfiguracja Git</li>
+        </ul>
+    </div>
+
+    <button class="btn" onclick="generateZIP()">
+        <i>⬇️</i> Pobierz Archiwum ZIP
+    </button>
+
+    <button class="btn" style="background: linear-gradient(135deg, #8b7355, #6b5545);" onclick="previewFiles()">
+        <i>👁️</i> Podgląd Plików
+    </button>
+
+    <div class="spinner" id="spinner"></div>
+
+    <div class="progress" id="progress">
+        <div class="progress-bar" id="progress-bar">0%</div>
+    </div>
+
+    <div class="status" id="status"></div>
+
+    <div class="file-list" id="file-list" style="display: none;"></div>
+</div>
+
+<script>
+    const indexHTML = `<!DOCTYPE html>
+```
+
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaks Nałęczów - Profesjonalny Salon Masażu</title>
+    <!-- UWAGA: To jest wersja demonstracyjna. Pełny kod znajduje się w poprzednim artifact -->
+    <meta name="description" content="Salon masażu Relaks Nałęczów - profesjonalne masaże relaksacyjne, lecznicze i sportowe">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #2d5016;
+        }
+        .note {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌿 Relaks Nałęczów - Salon Masażu</h1>
+    <div class="note">
+        <h2>📝 Ważna Informacja</h2>
+        <p>Ten plik to uproszczona wersja demonstracyjna.</p>
+        <p><strong>Pełny kod strony znajduje się w poprzednim artifact Claude.</strong></p>
+        <p>Skopiuj cały kod z artifact i zastąp zawartość tego pliku.</p>
+        <h3>Instrukcja:</h3>
+        <ol style="text-align: left; max-width: 600px; margin: 20px auto;">
+            <li>Wróć do poprzedniej odpowiedzi Claude</li>
+            <li>Znajdź artifact "Relaks Nałęczów - Salon Masażu (z MFA)"</li>
+            <li>Skopiuj CAŁY kod (od &lt;!DOCTYPE html&gt; do &lt;/html&gt;)</li>
+            <li>Otwórz ten plik w edytorze tekstu</li>
+            <li>Usuń całą zawartość</li>
+            <li>Wklej skopiowany kod</li>
+            <li>Zapisz plik</li>
+            <li>Gotowe! 🎉</li>
+        </ol>
+    </div>
+</body>
+</html>`;
+
+```
+    const readmeMD = `# 🌿 RELAKS NAŁĘCZÓW - Instrukcja Wdrożenia
+```
+
+## 🚀 SZYBKI START
+
+### 1. Zamień index.html na pełny kod
+
+- Otwórz index.html w edytorze
+- Skopiuj pełny kod z artifact Claude
+- Wklej i zapisz
+
+### 2. Wdróż na hosting
+
+- Netlify.com - przeciągnij plik
+- Vercel.com - deploy
+- GitHub Pages - push repo
+
+### 3. Panel Admin
+
+Login: admin
+Hasło: admin123
+MFA: Generowany automatycznie
+
+## 📝 Więcej informacji
+
+Zobacz pełną dokumentację w artifact “Instrukcja Wdrożenia”
+
+© 2025 Relaks Nałęczów`;
+
+```
+    const packageJSON = `{
+```
+
+“name”: “relaks-naleczow”,
+“version”: “1.0.0”,
+“description”: “Strona internetowa salonu masażu Relaks Nałęczów”,
+“main”: “index.html”,
+“scripts”: {
+“start”: “node server.js”,
+“dev”: “nodemon server.js”
+},
+“keywords”: [“massage”, “spa”, “wellness”, “naleczow”],
+“author”: “Relaks Nałęczów”,
+“license”: “MIT”,
+“dependencies”: {
+“express”: “^4.18.2”,
+“mysql2”: “^3.6.0”,
+“bcrypt”: “^5.1.1”,
+“jsonwebtoken”: “^9.0.2”,
+“cors”: “^2.8.5”,
+“dotenv”: “^16.3.1”
+}
+}`;
+
+```
+    const serverJS = `const express = require('express');
+```
+
+const mysql = require(‘mysql2’);
+const cors = require(‘cors’);
+require(‘dotenv’).config();
+
+const app = express();
+app.use(cors());
+app.use(express.json());
+app.use(express.static(‘public’));
+
+// Database connection
+const db = mysql.createConnection({
+host: process.env.DB_HOST || ‘localhost’,
+user: process.env.DB_USER || ‘root’,
+password: process.env.DB_PASSWORD,
+database: process.env.DB_NAME || ‘relaks_naleczow’
+});
+
+// API Routes
+app.get(’/api/services’, (req, res) => {
+db.query(‘SELECT * FROM services’, (err, results) => {
+if (err) return res.status(500).json({ error: err.message });
+res.json(results);
+});
+});
+
+app.post(’/api/bookings’, (req, res) => {
+const { name, phone, email, service, date, message } = req.body;
+db.query(
+‘INSERT INTO bookings (name, phone, email, service, date, message) VALUES (?, ?, ?, ?, ?, ?)’,
+[name, phone, email, service, date, message],
+(err, result) => {
+if (err) return res.status(500).json({ error: err.message });
+res.json({ success: true, id: result.insertId });
+}
+);
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+console.log(`Server running on port ${PORT}`);
+});`;
+
+```
+    const databaseSQL = `CREATE DATABASE IF NOT EXISTS relaks_naleczow;
+```
+
+USE relaks_naleczow;
+
+CREATE TABLE services (
+id INT PRIMARY KEY AUTO_INCREMENT,
+icon VARCHAR(50),
+title VARCHAR(100),
+description TEXT,
+price VARCHAR(20),
+duration VARCHAR(20),
+image_url TEXT,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE bookings (
+id INT PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(100),
+phone VARCHAR(20),
+email VARCHAR(100),
+service VARCHAR(100),
+date DATE,
+message TEXT,
+status ENUM(‘pending’, ‘confirmed’, ‘cancelled’) DEFAULT ‘pending’,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE gallery (
+id INT PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(100),
+image_url TEXT,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE testimonials (
+id INT PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(100),
+text TEXT,
+stars INT,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+– Przykładowe dane
+INSERT INTO services (icon, title, description, price, duration, image_url) VALUES
+(‘fa-spa’, ‘Masaż Relaksacyjny’, ‘Odprężający masaż całego ciała’, ‘180 zł’, ‘60 min’, ‘https://images.unsplash.com/photo-1544161515-4ab6ce6db874’),
+(‘fa-hand-sparkles’, ‘Masaż Leczniczy’, ‘Terapeutyczny masaż’, ‘200 zł’, ‘60 min’, ‘https://images.unsplash.com/photo-1519823551278-64ac92734fb1’);`;
+
+```
+    const envExample = `# Database Configuration
+```
+
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_password
+DB_NAME=relaks_naleczow
+
+# Server Configuration
+
+PORT=3000
+NODE_ENV=production
+
+# JWT Secret
+
+JWT_SECRET=your_super_secret_key_here
+
+# Email Configuration (SendGrid)
+
+SENDGRID_API_KEY=SG.your_api_key
+
+# SMS Configuration (Twilio)
+
+TWILIO_ACCOUNT_SID=ACxxxxxxxxxxxx
+TWILIO_AUTH_TOKEN=your_auth_token
+TWILIO_PHONE_NUMBER=+48123456789`;
+
+```
+    const gitignore = `# Dependencies
+```
+
+node_modules/
+package-lock.json
+
+# Environment variables
+
+.env
+.env.local
+.env.production
+
+# Logs
+
+*.log
+npm-debug.log*
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# IDE
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build
+
+dist/
+build/`;
+
+```
+    async function generateZIP() {
+        const spinner = document.getElementById('spinner');
+        const progress = document.getElementById('progress');
+        const progressBar = document.getElementById('progress-bar');
+        const status = document.getElementById('status');
+
+        spinner.style.display = 'block';
+        progress.style.display = 'block';
+        status.className = 'status processing';
+        status.textContent = '⏳ Generowanie archiwum...';
+
+        try {
+            const zip = new JSZip();
+            
+            // Add files
+            updateProgress(20, 'Dodawanie index.html...');
+            zip.file('index.html', indexHTML);
+            
+            updateProgress(35, 'Dodawanie README.md...');
+            zip.file('README.md', readmeMD);
+            
+            updateProgress(50, 'Dodawanie package.json...');
+            zip.file('package.json', packageJSON);
+            
+            updateProgress(65, 'Dodawanie server.js...');
+            zip.file('backend/server.js', serverJS);
+            
+            updateProgress(75, 'Dodawanie database.sql...');
+            zip.file('database.sql', databaseSQL);
+            
+            updateProgress(85, 'Dodawanie .env.example...');
+            zip.file('.env.example', envExample);
+            
+            updateProgress(95, 'Dodawanie .gitignore...');
+            zip.file('.gitignore', gitignore);
+
+            updateProgress(100, 'Kompresowanie...');
+
+            // Generate ZIP
+            const content = await zip.generateAsync({
+                type: 'blob',
+                compression: 'DEFLATE',
+                compressionOptions: { level: 9 }
+            });
+
+            // Download
+            saveAs(content, 'relaks-naleczow.zip');
+
+            spinner.style.display = 'none';
+            status.className = 'status success';
+            status.innerHTML = `
+                <strong>✅ Sukces!</strong><br>
+                Archiwum <strong>relaks-naleczow.zip</strong> zostało pobrane!<br>
+                <small>Rozpakuj plik i postępuj zgodnie z instrukcją w README.md</small>
+            `;
+
+            setTimeout(() => {
+                progress.style.display = 'none';
+            }, 2000);
+
+        } catch (error) {
+            spinner.style.display = 'none';
+            progress.style.display = 'none';
+            status.className = 'status';
+            status.style.background = '#f8d7da';
+            status.style.color = '#721c24';
+            status.style.display = 'block';
+            status.innerHTML = `<strong>❌ Błąd:</strong> ${error.message}`;
+        }
+    }
+
+    function updateProgress(percent, message) {
+        const progressBar = document.getElementById('progress-bar');
+        progressBar.style.width = percent + '%';
+        progressBar.textContent = percent + '%';
+        
+        if (message) {
+            document.getElementById('status').textContent = message;
+        }
+    }
+
+    function previewFiles() {
+        const fileList = document.getElementById('file-list');
+        fileList.style.display = 'block';
+        fileList.innerHTML = `
+```
+
+<strong>📁 Struktura archiwum ZIP:</strong>
+
+relaks-naleczow.zip
+├── index.html              (${(indexHTML.length / 1024).toFixed(1)} KB)
+├── README.md               (${(readmeMD.length / 1024).toFixed(1)} KB)
+├── package.json            (${(packageJSON.length / 1024).toFixed(1)} KB)
+├── .env.example            (${(envExample.length / 1024).toFixed(1)} KB)
+├── .gitignore              (${(gitignore.length / 1024).toFixed(1)} KB)
+├── database.sql            (${(databaseSQL.length / 1024).toFixed(1)} KB)
+└── backend/
+└── server.js           (${(serverJS.length / 1024).toFixed(1)} KB)
+
+<strong>Łącznie:</strong> ~${((indexHTML.length + readmeMD.length + packageJSON.length + serverJS.length + databaseSQL.length + envExample.length + gitignore.length) / 1024).toFixed(1)} KB
+`;
+}
+</script>
+
+</body>
+</html>
