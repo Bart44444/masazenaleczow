@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Database connection
+// Database connection 
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
@@ -17,6 +17,21 @@ const db = mysql.createConnection({
   database: 'relaks_naleczow'
 });
 
+// MEMORY STORAGE
+/*
+let bookings = [];
+let services = [
+    {
+        id: 1,
+        icon: 'fa-spa',
+        title: 'Masaż Relaksacyjny',
+        description: 'Odprężający masaż całego ciała',
+        price: '180 zł',
+        duration: '60 min',
+        image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874'
+    }
+];
+*/
 // API Endpoints
 app.get('/api/services', (req, res) => {
   db.query('SELECT * FROM services', (err, results) => {

@@ -1,0 +1,13 @@
+{
+  "name": "Node.js & MySQL",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {
+    "ghcr.io/devcontainers/features/mysql:1": {
+      "version": "8.0",
+      "mysqlDatabase": "relaks_naleczow",
+      "mysqlUser": "root",
+      "mysqlPassword": "dposfspfjoospd"
+    }
+  },
+  "forwardPorts": [3000, 3306]
+}
