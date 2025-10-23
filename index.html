@@ -1098,8 +1098,10 @@
     };
 
     // MFA state
+    /*
     let mfaCode = '';
     let mfaExpiry = null;
+    */
 
     // Load data from memory
     function loadSiteData() {
@@ -1175,7 +1177,7 @@
     }
 
     // Admin Panel Functions
-    function openAdminLogin(e) {
+    /*function openAdminLogin(e) {
         e.preventDefault();
         document.getElementById('admin-modal').classList.add('active');
         resetLoginSteps();
@@ -1277,8 +1279,9 @@
         closeAdminModal();
         alert('Wylogowano pomyślnie!');
     }
-
+    */
     // Admin CRUD Functions
+    /*
     function editServices() {
         const action = prompt('Co chcesz zrobić?\n1 - Dodaj usługę\n2 - Usuń ostatnią usługę');
         
@@ -1375,7 +1378,7 @@
     function viewBookings() {
         alert('Funkcja "Rezerwacje" będzie dostępna po integracji z bazą danych.\n\nAktualnie formularz loguje dane do konsoli przeglądarki (F12).');
     }
-
+    */
     // Other Functions
     function toggleDarkMode() {
         document.body.classList.toggle('dark-mode');
@@ -1446,10 +1449,12 @@
     });
 
     // Check if admin is already logged in
+    /*
     if (sessionStorage.getItem('adminLoggedIn') === 'true') {
         console.log('Admin session active');
     }
-
+    */
+   
     // Load data on page load
     loadSiteData();
 
