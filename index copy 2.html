@@ -1875,49 +1875,6 @@ createMobileMenu();
     console.log('%c📱 Wszystkie funkcje aktywne: MFA, Gallery, Booking, FAQ, Stats', 'color: #4a7c2c; font-size: 12px;');
 </script>
 ```
-    <!-- EmailJS SDK -->
-    <script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
-    <script>
-        // Initialize EmailJS
-        (function() {
-            emailjs.init("YOUR_PUBLIC_KEY"); // <- wstaw swój public key z EmailJS
-        })();
 
-        // Booking form handler
-        document.getElementById('booking-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const submitBtn = e.target.querySelector('button[type="submit"]');
-            submitBtn.disabled = true;
-            
-            const formData = Object.fromEntries(new FormData(e.target));
-            const templateParams = {
-                name: formData.name,
-                phone: formData.phone,
-                email: formData.email,
-                service: formData.service,
-                date: formData.date,
-                message: formData.message,
-                to_email: 'bartosz.sebastian.tarka@gmail.com'
-            };
-
-            emailjs.send(
-                'YOUR_SERVICE_ID', // <- wstaw service_id z EmailJS
-                'YOUR_TEMPLATE_ID', // <- wstaw template_id z EmailJS
-                templateParams
-            )
-            .then(function() {
-                alert(`Dziękujemy za rezerwację!\n\nPotwierdzenie zostało wysłane na:\n${formData.email || formData.phone}`);
-                e.target.reset();
-            })
-            .catch(function(error) {
-                console.error('EmailJS error:', error);
-                alert('Przepraszamy, wystąpił błąd przy wysyłaniu wiadomości. Spróbuj ponownie później.');
-            })
-            .finally(function() {
-                submitBtn.disabled = false;
-            });
-        });
-    </script>
-    
 </body>
 </html>
