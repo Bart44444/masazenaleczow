@@ -1,0 +1,13 @@
+{
+  "name": "relaks-naleczow",
+  "version": "1.0.0",
+  "description": "Strona salonu masażu Relaks Nałęczów",
+  "main": "index.html",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "keywords": ["massage", "spa", "wellness"],
+  "author": "Relaks Nałęczów",
+  "license": "MIT"
+}

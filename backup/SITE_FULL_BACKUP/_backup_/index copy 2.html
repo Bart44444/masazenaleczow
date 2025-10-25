@@ -1,0 +1,1880 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaks Nałęczów - Profesjonalny Salon Masażu | Masaże Relaksacyjne i Lecznicze</title>
+    <meta name="description" content="Salon masażu Relaks Nałęczów oferuje profesjonalne masaże relaksacyjne, lecznicze i sportowe. Umów wizytę online! ☎️ 123-456-789">
+    <meta name="keywords" content="masaż Nałęczów, salon masażu Nałęczów, masaże relaksacyjne Nałęczów, masaż leczniczy Nałęczów, studio masażu Nałęczów">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+    :root {
+        --primary: #2d5016;
+        --secondary: #4a7c2c;
+        --accent: #8b7355;
+        --beige: #f5f1e8;
+        --light-green: #e8f5e9;
+        --dark: #1a1a1a;
+        --text: #333;
+        --white: #ffffff;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--text);
+        background: var(--beige);
+    }
+
+    body.dark-mode {
+        --beige: #1a1a1a;
+        --white: #2d2d2d;
+        --text: #e0e0e0;
+        --light-green: #1e3a1e;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+
+    header {
+        background: var(--white);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        transition: all 0.3s;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: var(--primary);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .nav-links a {
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: var(--primary);
+    }
+
+    .theme-toggle {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--text);
+    }
+
+    .admin-link {
+        background: var(--accent);
+        color: white;
+        padding: 8px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+
+    .admin-link:hover {
+        background: var(--primary);
+    }
+
+    .hero {
+        background: linear-gradient(135deg, rgba(45,80,22,0.85), rgba(74,124,44,0.75)), url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1600&h=900&fit=crop');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 140px 0;
+        text-align: center;
+        position: relative;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        animation: fadeInUp 1s;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+        animation: fadeInUp 1.2s;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+
+    .cta-button {
+        display: inline-block;
+        padding: 15px 40px;
+        background: var(--accent);
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        transition: transform 0.3s, box-shadow 0.3s;
+        animation: fadeInUp 1.4s;
+    }
+
+    .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .section {
+        padding: 80px 0;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        color: var(--primary);
+        margin-bottom: 3rem;
+        position: relative;
+    }
+
+    .section-title::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: var(--secondary);
+        margin: 15px auto;
+        border-radius: 2px;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 3rem;
+    }
+
+    .service-card {
+        background: var(--white);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+    }
+
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    }
+
+    .service-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .service-content {
+        padding: 30px;
+    }
+
+    .service-icon {
+        font-size: 2.5rem;
+        color: var(--primary);
+        margin-bottom: 1rem;
+    }
+
+    .service-card h3 {
+        color: var(--primary);
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .service-card .price {
+        color: var(--accent);
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin: 1rem 0;
+    }
+
+    .service-card .duration {
+        color: var(--text);
+        font-size: 0.9rem;
+        opacity: 0.8;
+    }
+
+    .promo-section {
+        background: linear-gradient(135deg, rgba(45,80,22,0.1), rgba(74,124,44,0.1)), url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1600&h=600&fit=crop');
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+        text-align: center;
+        position: relative;
+    }
+
+    .promo-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(232, 245, 233, 0.95);
+    }
+
+    .promo-card {
+        background: var(--white);
+        padding: 40px;
+        border-radius: 15px;
+        max-width: 600px;
+        margin: 0 auto;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        position: relative;
+        z-index: 1;
+    }
+
+    .promo-card h3 {
+        color: var(--primary);
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .promo-badge {
+        display: inline-block;
+        background: #e74c3c;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        height: 300px;
+        cursor: pointer;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s;
+    }
+
+    .gallery-item:hover img {
+        transform: scale(1.1);
+    }
+
+    .gallery-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(transparent, rgba(0,0,0,0.8));
+        color: white;
+        padding: 30px 20px 20px;
+        transform: translateY(100%);
+        transition: transform 0.3s;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+        transform: translateY(0);
+    }
+
+    .testimonials {
+        background: var(--white);
+    }
+
+    .testimonial-card {
+        background: var(--light-green);
+        padding: 30px;
+        border-radius: 15px;
+        margin: 20px 0;
+        position: relative;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .testimonial-card .stars {
+        color: #ffd700;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-section {
+        background: var(--white);
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-top: 2rem;
+    }
+
+    .contact-form {
+        background: var(--light-green);
+        padding: 30px;
+        border-radius: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 500;
+        color: var(--primary);
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid var(--secondary);
+        border-radius: 8px;
+        font-size: 1rem;
+        background: var(--white);
+        transition: border-color 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+        outline: none;
+        border-color: var(--primary);
+    }
+
+    .submit-btn {
+        background: var(--primary);
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 25px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.3s;
+    }
+
+    .submit-btn:hover {
+        background: var(--secondary);
+        transform: translateY(-2px);
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+        background: var(--light-green);
+        border-radius: 10px;
+    }
+
+    .info-item i {
+        font-size: 2rem;
+        color: var(--primary);
+    }
+
+    .map-container {
+        height: 300px;
+        background: var(--light-green);
+        border-radius: 15px;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+
+
+    footer {
+        background: var(--dark);
+        color: white;
+        padding: 40px 0 20px;
+        text-align: center;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .footer-section h3 {
+        color: var(--secondary);
+        margin-bottom: 15px;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .social-links a {
+        color: white;
+        font-size: 1.5rem;
+        transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+        color: var(--secondary);
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.8);
+        z-index: 3000;
+        align-items: center;
+        justify-content: center;
+        animation: fadeIn 0.3s;
+    }
+
+    .modal.active {
+        display: flex;
+    }
+
+    .modal-content {
+        background: var(--white);
+        padding: 40px;
+        border-radius: 15px;
+        max-width: 500px;
+        width: 90%;
+        max-height: 90vh;
+        overflow-y: auto;
+        position: relative;
+    }
+
+    .close-modal {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 2rem;
+        cursor: pointer;
+        color: var(--text);
+        background: none;
+        border: none;
+    }
+
+    .mfa-code {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+        color: var(--primary);
+        background: var(--light-green);
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px 0;
+        letter-spacing: 10px;
+    }
+
+    .admin-dashboard {
+        display: none;
+        padding: 20px;
+    }
+
+    .admin-dashboard.active {
+        display: block;
+    }
+
+    .admin-actions {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .admin-actions button {
+        padding: 15px;
+        background: var(--primary);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+
+    .admin-actions button:hover {
+        background: var(--secondary);
+    }
+
+    .price-table {
+        background: var(--white);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        margin-top: 2rem;
+    }
+
+    .price-table table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .price-table th {
+        background: var(--primary);
+        color: white;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .price-table td {
+        padding: 15px;
+        border-bottom: 1px solid var(--light-green);
+    }
+
+    .price-table tr:hover {
+        background: var(--light-green);
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+   @media (max-width: 768px) {
+        .nav-links {
+            gap: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+        }
+
+        .contact-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .footer-content {
+            text-align: center;
+        }
+
+        .admin-link {
+            padding: 6px 15px;
+            font-size: 0.9rem;
+        }
+    }
+    
+    .login-step {
+        display: none;
+    }
+
+    .login-step.active {
+        display: block;
+    }
+
+    .success-message {
+        background: #27ae60;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .error-message {
+        background: #e74c3c;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        padding: 20px 0 20px 0;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        z-index: 1001;
+        align-items: center;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .mobile-menu-toggle {
+        display: block !important;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: var(--primary);
+        z-index: 1002;
+        cursor: pointer;
+    }
+}
+    .theme-toggle-mobile {
+        display: none;
+    }
+
+@media (max-width: 768px) {
+    nav > .theme-toggle {
+        display: none !important;
+    }
+    .theme-toggle-mobile {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+</style>
+```
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <i class="fas fa-spa"></i>
+                Relaks Nałęczów
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Start</a></li>
+                <li><a href="#services">Usługi</a></li>
+                <li><a href="#prices">Cennik</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <!--<li><a href="#admin" class="admin-link" onclick="openAdminLogin(event)"><i class="fas fa-user-shield"></i> Panel</a></li>-->
+                <li class="theme-toggle-mobile">
+                    <!-- tu będzie przycisk dla mobile -->
+                    <button class="theme-toggle" onclick="toggleDarkMode()">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul> 
+            <button class="theme-toggle" onclick="toggleDarkMode()">
+                        <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+```
+<section class="hero" id="home">
+    <div class="container">
+        <h1>Odkryj Prawdziwy Relaks w Nałęczowie</h1>
+        <p>Profesjonalne masaże w sercu uzdrowiska</p>
+        <a href="#contact" class="cta-button">Umów Wizytę Online</a>
+    </div>
+</section>
+
+<section class="promo-section">
+    <div class="container">
+        <div class="promo-card">
+            <span class="promo-badge">PROMOCJA -20%</span>
+            <h3>Pakiet Relaksacyjny</h3>
+            <p>3 masaże 60 min w cenie 2! Idealne na regenerację po pracy lub intensywnym treningu.</p>
+            <p style="font-size: 2rem; color: var(--primary); font-weight: bold; margin: 20px 0;">399 zł</p>
+            <a href="#contact" class="cta-button">Skorzystaj z Oferty</a>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="services">
+    <div class="container">
+        <h2 class="section-title">Nasze Usługi</h2>
+        <div class="services-grid" id="services-grid">
+            <!-- Services will be loaded dynamically -->
+        </div>
+    </div>
+</section>
+
+<section class="section" id="prices" style="background: var(--light-green);">
+    <div class="container">
+        <h2 class="section-title">Cennik Usług</h2>
+        <div class="price-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Usługa</th>
+                        <th>Czas trwania</th>
+                        <th>Cena</th>
+                    </tr>
+                </thead>
+                <tbody id="price-table-body">
+                    <!-- Prices will be loaded dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="gallery">
+    <div class="container">
+        <h2 class="section-title">Galeria Salonu</h2>
+        <div class="gallery-grid" id="gallery-grid">
+            <!-- Gallery will be loaded dynamically -->
+        </div>
+    </div>
+</section>
+
+<section class="section testimonials" id="testimonials">
+    <div class="container">
+        <h2 class="section-title">Opinie Klientów</h2>
+        <div id="testimonials-container">
+            <!-- Testimonials will be loaded dynamically -->
+        </div>
+    </div>
+</section>
+
+<section class="section contact-section" id="contact">
+    <div class="container">
+        <h2 class="section-title">Umów Wizytę</h2>
+        <div class="contact-grid">
+            <div class="contact-form">
+                <form id="booking-form">
+                    <div class="form-group">
+                        <label>Imię i Nazwisko *</label>
+                        <input type="text" required name="name">
+                    </div>
+                    <div class="form-group">
+                        <label>Telefon *</label>
+                        <input type="tel" required name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label>Rodzaj Masażu *</label>
+                        <select required name="service">
+                            <option value="">Wybierz usługę</option>
+                            <option>Masaż Relaksacyjny</option>
+                            <option>Masaż Leczniczy</option>
+                            <option>Masaż Sportowy</option>
+                            <option>Masaż Balijski</option>
+                            <option>Masaż Gorącymi Kamieniami</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferowana Data</label>
+                        <input type="date" name="date">
+                    </div>
+                    <div class="form-group">
+                        <label>Dodatkowe Informacje</label>
+                        <textarea rows="3" name="message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Wyślij Rezerwację</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Adres</strong><br>
+                        ul. Zdrojowa 12, 24-150 Nałęczów
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>Telefon</strong><br>
+                        +48 123 456 789
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong><br>
+                        kontakt@relaksnaleczow.pl
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>Godziny Otwarcia</strong><br>
+                        Pn-Pt: 9:00-20:00<br>
+                        Sb-Nd: 10:00-18:00
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.8741869382447!2d22.207439!3d51.285801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDE3JzA4LjkiTiAyMsKwMTInMjYuOCJF!5e0!3m2!1spl!2spl!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>O Nas</h3>
+                <p>Salon Masażu Relaks Nałęczów to profesjonalne studio oferujące najwyższej jakości zabiegi masażu w sercu uzdrowiska.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Szybkie Linki</h3>
+                <p><a href="#services" style="color: white; text-decoration: none;">Usługi</a></p>
+                <p><a href="#prices" style="color: white; text-decoration: none;">Cennik</a></p>
+                <p><a href="#contact" style="color: white; text-decoration: none;">Kontakt</a></p>
+                <p><a href="#" style="color: white; text-decoration: none;">Polityka Prywatności</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Informacje</h3>
+                <p>NIP: 123-456-78-90</p>
+                <p>REGON: 123456789</p>
+                <p>© 2025 Relaks Nałęczów</p>
+            </div>
+        </div>
+        <p style="text-align: center; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+            Wszystkie prawa zastrzeżone | Designed with <i class="fas fa-heart" style="color: #e74c3c;"></i>
+        </p>
+    </div>
+</footer>
+
+<!-- Admin Login Modal -->
+<div class="modal" id="admin-modal">
+    <div class="modal-content">
+        <button class="close-modal" onclick="closeAdminModal()">&times;</button>
+        
+        <!-- Step 1: Login -->
+        <div class="login-step active" id="step-login">
+            <h2 style="color: var(--primary); margin-bottom: 20px;">
+                <i class="fas fa-user-shield"></i> Panel Administracyjny
+            </h2>
+            <p style="margin-bottom: 20px;">Zaloguj się aby uzyskać dostęp do panelu edycji treści.</p>
+            <div class="form-group">
+                <label>Login</label>
+                <input type="text" id="admin-login" placeholder="admin">
+            </div>
+            <div class="form-group">
+                <label>Hasło</label>
+                <input type="password" id="admin-password" placeholder="••••••••">
+            </div>
+            <button class="submit-btn" onclick="requestMFA()">Dalej</button>
+        </div>
+
+        <!-- Step 2: MFA Code -->
+        <div class="login-step" id="step-mfa">
+            <h2 style="color: var(--primary); margin-bottom: 20px;">
+                <i class="fas fa-shield-alt"></i> Weryfikacja MFA
+            </h2>
+            <p style="margin-bottom: 20px;">Kod weryfikacyjny został wysłany na Twój telefon:</p>
+            <div class="mfa-code" id="mfa-code-display">------</div>
+            <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 20px;">Kod ważny przez 5 minut</p>
+            <div class="form-group">
+                <label>Wprowadź kod weryfikacyjny</label>
+                <input type="text" id="mfa-code-input" placeholder="123456" maxlength="6" style="text-align: center; font-size: 1.5rem; letter-spacing: 5px;">
+            </div>
+            <button class="submit-btn" onclick="verifyMFA()">Weryfikuj</button>
+            <button class="submit-btn" style="background: #95a5a6; margin-top: 10px;" onclick="backToLogin()">Powrót</button>
+        </div>
+
+        <!-- Step 3: Admin Dashboard -->
+        <div class="admin-dashboard" id="admin-dashboard">
+            <h2 style="color: var(--primary); margin-bottom: 20px;">
+                <i class="fas fa-tachometer-alt"></i> Panel Zarządzania
+            </h2>
+            <div class="success-message">
+                <i class="fas fa-check-circle"></i> Zalogowano pomyślnie!
+            </div>
+            <p style="margin-bottom: 20px;">Witaj, Admin! Wybierz akcję:</p>
+            <div class="admin-actions">
+                <button onclick="editServices()">
+                    <i class="fas fa-spa"></i><br>Edytuj Usługi
+                </button>
+                <button onclick="editPrices()">
+                    <i class="fas fa-tag"></i><br>Edytuj Cennik
+                </button>
+                <button onclick="editGallery()">
+                    <i class="fas fa-images"></i><br>Edytuj Galerię
+                </button>
+                <button onclick="viewBookings()">
+                    <i class="fas fa-calendar-check"></i><br>Rezerwacje
+                </button>
+                <button onclick="editTestimonials()">
+                    <i class="fas fa-comments"></i><br>Opinie
+                </button>
+                <button onclick="adminLogout()">
+                    <i class="fas fa-sign-out-alt"></i><br>Wyloguj
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Relaks Nałęczów",
+    "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874",
+    "@id": "",
+    "url": "https://relaksnaleczow.pl",
+    "telephone": "+48123456789",
+    "priceRange": "$$",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ul. Zdrojowa 12",
+        "addressLocality": "Nałęczów",
+        "postalCode": "24-150",
+        "addressCountry": "PL"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 51.2858,
+        "longitude": 22.2094
+    },
+    "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "20:00"
+    },{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "10:00",
+        "closes": "18:00"
+    }],
+    "sameAs": [
+        "https://www.facebook.com/relaksnaleczow",
+        "https://www.instagram.com/relaksnaleczow"
+    ]
+}
+</script>
+
+<script>
+    // Data store with real images
+    let siteData = {
+        services: [
+            {
+                icon: 'fa-spa',
+                title: 'Masaż Relaksacyjny',
+                description: 'Odprężający masaż całego ciała z użyciem aromatycznych olejków.',
+                price: '180 zł',
+                duration: '60 min',
+                image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&h=300&fit=crop'
+            },
+            {
+                icon: 'fa-hand-sparkles',
+                title: 'Masaż Leczniczy',
+                description: 'Terapeutyczny masaż ukierunkowany na konkretne dolegliwości.',
+                price: '200 zł',
+                duration: '60 min',
+                image: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=400&h=300&fit=crop'
+            },
+            {
+                icon: 'fa-running',
+                title: 'Masaż Sportowy',
+                description: 'Intensywny masaż wspomagający regenerację po treningu.',
+                price: '190 zł',
+                duration: '60 min',
+                image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=300&fit=crop'
+            },
+            {
+                icon: 'fa-leaf',
+                title: 'Masaż Balijski',
+                description: 'Egzotyczny masaż łączący techniki głębokiego ucisku i akupresury.',
+                price: '220 zł',
+                duration: '90 min',
+                image: 'https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=400&h=300&fit=crop'
+            },
+            {
+                icon: 'fa-fire',
+                title: 'Masaż Gorącymi Kamieniami',
+                description: 'Relaksacyjny zabieg z użyciem rozgrzanych kamieni wulkanicznych.',
+                price: '240 zł',
+                duration: '90 min',
+                image: 'https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=400&h=300&fit=crop'
+            },
+            {
+                icon: 'fa-baby',
+                title: 'Masaż dla Kobiet w Ciąży',
+                description: 'Delikatny masaż dostosowany do potrzeb przyszłych mam.',
+                price: '170 zł',
+                duration: '60 min',
+                image: 'https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?w=400&h=300&fit=crop'
+            }
+        ],
+        testimonials: [
+            {
+                name: 'Anna Kowalska',
+                text: 'Najlepszy salon masażu w Nałęczowie! Profesjonalna obsługa i wspaniała atmosfera. Polecam masaż balijski!',
+                stars: 5
+            },
+            {
+                name: 'Piotr Nowak',
+                text: 'Po intensywnym treningu masaż sportowy był idealny. Profesjonalne podejście i świetne efekty.',
+                stars: 5
+            },
+            {
+                name: 'Maria Wiśniewska',
+                text: 'Cudowne miejsce na relaks. Masaż gorącymi kamieniami to czysta przyjemność. Wracam regularnie!',
+                stars: 5
+            }
+        ],
+        gallery: [
+            { name: 'Sala masażu 1', image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&h=400&fit=crop' },
+            { name: 'Sala masażu 2', image: 'https://images.unsplash.com/photo-1596178060671-7a80dc8059ea?w=600&h=400&fit=crop' },
+            { name: 'Recepcja', image: 'https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=600&h=400&fit=crop' },
+            { name: 'Strefa relaksu', image: 'https://images.unsplash.com/photo-1583416750470-965b2707b355?w=600&h=400&fit=crop' },
+            { name: 'Gabinet terapeutyczny', image: 'https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=600&h=400&fit=crop' },
+            { name: 'Wnętrze salonu', image: 'https://images.unsplash.com/photo-1520984032042-162d526883b2?w=600&h=400&fit=crop' }
+        ]
+    };
+
+    // MFA state
+    /*
+    let mfaCode = '';
+    let mfaExpiry = null;
+    */
+
+    // Load data from memory
+    function loadSiteData() {
+        try {
+            const saved = JSON.parse(sessionStorage.getItem('siteData'));
+            if (saved) siteData = saved;
+        } catch (e) {
+            console.log('Using default data');
+        }
+        renderServices();
+        renderPrices();
+        renderGallery();
+        renderTestimonials();
+    }
+
+    function saveSiteData() {
+        sessionStorage.setItem('siteData', JSON.stringify(siteData));
+    }
+
+    function renderServices() {
+        const grid = document.getElementById('services-grid');
+        grid.innerHTML = siteData.services.map(service => `
+            <div class="service-card">
+                <img src="${service.image}" alt="${service.title}" class="service-image">
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas ${service.icon}"></i>
+                    </div>
+                    <h3>${service.title}</h3>
+                    <p>${service.description}</p>
+                    <div class="price">${service.price}</div>
+                    <div class="duration"><i class="far fa-clock"></i> ${service.duration}</div>
+                    <a href="#contact" class="cta-button" style="margin-top: 20px; display: inline-block; padding: 10px 25px; font-size: 0.9rem;">Zarezerwuj</a>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    function renderPrices() {
+        const tbody = document.getElementById('price-table-body');
+        tbody.innerHTML = siteData.services.map(service => `
+            <tr>
+                <td><strong>${service.title}</strong></td>
+                <td>${service.duration}</td>
+                <td><strong style="color: var(--accent); font-size: 1.2rem;">${service.price}</strong></td>
+            </tr>
+        `).join('');
+    }
+
+    function renderGallery() {
+        const grid = document.getElementById('gallery-grid');
+        grid.innerHTML = siteData.gallery.map((item, index) => `
+            <div class="gallery-item">
+                <img src="${item.image}" alt="${item.name}">
+                <div class="gallery-overlay">
+                    <h3>${item.name}</h3>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    function renderTestimonials() {
+        const container = document.getElementById('testimonials-container');
+        container.innerHTML = siteData.testimonials.map(testimonial => `
+            <div class="testimonial-card">
+                <div class="stars">
+                    ${'★'.repeat(testimonial.stars)}${'☆'.repeat(5 - testimonial.stars)}
+                </div>
+                <p style="font-style: italic; margin-bottom: 15px;">"${testimonial.text}"</p>
+                <strong style="color: var(--primary);">- ${testimonial.name}</strong>
+            </div>
+        `).join('');
+    }
+
+    // Admin Panel Functions
+    /*function openAdminLogin(e) {
+        e.preventDefault();
+        document.getElementById('admin-modal').classList.add('active');
+        resetLoginSteps();
+    }
+
+    function closeAdminModal() {
+        document.getElementById('admin-modal').classList.remove('active');
+        resetLoginSteps();
+    }
+
+    function resetLoginSteps() {
+        document.querySelectorAll('.login-step').forEach(step => step.classList.remove('active'));
+        document.getElementById('step-login').classList.add('active');
+        document.getElementById('admin-dashboard').classList.remove('active');
+        document.getElementById('admin-login').value = '';
+        document.getElementById('admin-password').value = '';
+        document.getElementById('mfa-code-input').value = '';
+    }
+
+    function generateMFACode() {
+        return Math.floor(100000 + Math.random() * 900000).toString();
+    }
+
+    function requestMFA() {
+        const login = document.getElementById('admin-login').value;
+        const password = document.getElementById('admin-password').value;
+
+        if (!login || !password) {
+            alert('Proszę wypełnić wszystkie pola!');
+            return;
+        }
+
+        if (login === 'admin' && password === 'Naleczow2025') {
+            // Generate MFA code
+            mfaCode = generateMFACode();
+            mfaExpiry = Date.now() + 5 * 60 * 1000; // 5 minutes
+
+            // Show MFA step
+            document.getElementById('step-login').classList.remove('active');
+            document.getElementById('step-mfa').classList.add('active');
+            document.getElementById('mfa-code-display').textContent = mfaCode;
+
+            // In production, this would send SMS/email
+            console.log('MFA Code:', mfaCode);
+            
+            // Auto-expire code after 5 minutes
+            setTimeout(() => {
+                if (Date.now() >= mfaExpiry) {
+                    mfaCode = '';
+                    alert('Kod wygasł. Spróbuj ponownie.');
+                    resetLoginSteps();
+                }
+            }, 5 * 60 * 1000);
+        } else {
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error-message';
+            errorDiv.innerHTML = '<i class="fas fa-exclamation-circle"></i> Nieprawidłowe dane logowania!';
+            document.getElementById('step-login').insertBefore(errorDiv, document.getElementById('step-login').querySelector('.form-group'));
+            setTimeout(() => errorDiv.remove(), 3000);
+        }
+    }
+
+    function verifyMFA() {
+        const inputCode = document.getElementById('mfa-code-input').value;
+
+        if (!inputCode) {
+            alert('Proszę wprowadzić kod weryfikacyjny!');
+            return;
+        }
+
+        if (Date.now() > mfaExpiry) {
+            alert('Kod wygasł. Spróbuj ponownie.');
+            resetLoginSteps();
+            return;
+        }
+
+        if (inputCode === mfaCode) {
+            // Login successful
+            document.getElementById('step-mfa').classList.remove('active');
+            document.getElementById('admin-dashboard').classList.add('active');
+            sessionStorage.setItem('adminLoggedIn', 'true');
+        } else {
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error-message';
+            errorDiv.innerHTML = '<i class="fas fa-exclamation-circle"></i> Nieprawidłowy kod weryfikacyjny!';
+            document.getElementById('step-mfa').insertBefore(errorDiv, document.getElementById('step-mfa').querySelector('.form-group'));
+            setTimeout(() => errorDiv.remove(), 3000);
+        }
+    }
+
+    function backToLogin() {
+        document.getElementById('step-mfa').classList.remove('active');
+        document.getElementById('step-login').classList.add('active');
+        mfaCode = '';
+    }
+
+    function adminLogout() {
+        sessionStorage.removeItem('adminLoggedIn');
+        closeAdminModal();
+        alert('Wylogowano pomyślnie!');
+    }
+    */
+    // Admin CRUD Functions
+    /*
+    function editServices() {
+        const action = prompt('Co chcesz zrobić?\n1 - Dodaj usługę\n2 - Usuń ostatnią usługę');
+        
+        if (action === '1') {
+            const title = prompt('Nazwa usługi:');
+            if (!title) return;
+            const description = prompt('Opis usługi:');
+            const price = prompt('Cena (np. 180 zł):');
+            const duration = prompt('Czas trwania (np. 60 min):');
+            const icon = prompt('Ikona Font Awesome (np. fa-spa):', 'fa-spa');
+            
+            siteData.services.push({
+                icon: icon,
+                title: title,
+                description: description,
+                price: price,
+                duration: duration,
+                image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&h=300&fit=crop'
+            });
+            
+            saveSiteData();
+            renderServices();
+            renderPrices();
+            alert('Usługa dodana pomyślnie!');
+        } else if (action === '2') {
+            if (siteData.services.length > 0) {
+                siteData.services.pop();
+                saveSiteData();
+                renderServices();
+                renderPrices();
+                alert('Usługa usunięta!');
+            }
+        }
+    }
+
+    function editPrices() {
+        alert('Ceny są automatycznie synchronizowane z usługami.\nEdytuj usługi aby zmienić ceny.');
+    }
+
+    function editGallery() {
+        const action = prompt('Co chcesz zrobić?\n1 - Dodaj zdjęcie\n2 - Usuń ostatnie zdjęcie');
+        
+        if (action === '1') {
+            const name = prompt('Nazwa zdjęcia:');
+            if (!name) return;
+            const imageUrl = prompt('URL zdjęcia:', 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&h=400&fit=crop');
+            
+            siteData.gallery.push({
+                name: name,
+                image: imageUrl
+            });
+            
+            saveSiteData();
+            renderGallery();
+            alert('Zdjęcie dodane pomyślnie!');
+        } else if (action === '2') {
+            if (siteData.gallery.length > 0) {
+                siteData.gallery.pop();
+                saveSiteData();
+                renderGallery();
+                alert('Zdjęcie usunięte!');
+            }
+        }
+    }
+
+    function editTestimonials() {
+        const action = prompt('Co chcesz zrobić?\n1 - Dodaj opinię\n2 - Usuń ostatnią opinię');
+        
+        if (action === '1') {
+            const name = prompt('Imię klienta:');
+            if (!name) return;
+            const text = prompt('Treść opinii:');
+            const stars = parseInt(prompt('Ocena (1-5):', '5'));
+            
+            siteData.testimonials.push({
+                name: name,
+                text: text,
+                stars: Math.min(5, Math.max(1, stars))
+            });
+            
+            saveSiteData();
+            renderTestimonials();
+            alert('Opinia dodana pomyślnie!');
+        } else if (action === '2') {
+            if (siteData.testimonials.length > 0) {
+                siteData.testimonials.pop();
+                saveSiteData();
+                renderTestimonials();
+                alert('Opinia usunięta!');
+            }
+        }
+    }
+
+    function viewBookings() {
+        alert('Funkcja "Rezerwacje" będzie dostępna po integracji z bazą danych.\n\nAktualnie formularz loguje dane do konsoli przeglądarki (F12).');
+    }
+    */
+    // Other Functions
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+        const icon = document.querySelector('.theme-toggle i');
+        if (document.body.classList.contains('dark-mode')) {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+        }
+    }
+
+    // Booking form handler
+    document.getElementById('booking-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const data = Object.fromEntries(formData);
+        
+        console.log('Booking data:', data);
+        
+        alert(`Dziękujemy za rezerwację!\n\nPotwierdzenie zostało wysłane na:\n${data.email || data.phone}\n\nSkontaktujemy się z Państwem w ciągu 24h.`);
+        e.target.reset();
+    });
+
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href === '#admin') return;
+            
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll > 100) {
+            header.style.boxShadow = '0 5px 20px rgba(0,0,0,0.2)';
+        } else {
+            header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+        }
+    });
+
+    // Animation on scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animation = 'fadeInUp 0.8s ease-out';
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.service-card, .testimonial-card, .gallery-item').forEach(el => {
+        observer.observe(el);
+    });
+
+    // Check if admin is already logged in
+    /*
+    if (sessionStorage.getItem('adminLoggedIn') === 'true') {
+        console.log('Admin session active');
+    }
+    */
+   
+    // Load data on page load
+    loadSiteData();
+
+    console.log('%c🔐 Dane logowania do panelu:', 'color: #2d5016; font-size: 14px; font-weight: bold;');
+    console.log('%cLogin: admin', 'color: #4a7c2c; font-size: 12px;');
+    console.log('%cHasło: admin123', 'color: #4a7c2c; font-size: 12px;');
+    console.log('%cKod MFA zostanie wygenerowany po zalogowaniu', 'color: #8b7355; font-size: 11px;');
+
+    // Mobile menu toggle
+    /*function createMobileMenu() {
+        if (window.innerWidth <= 768) {
+            const nav = document.querySelector('.nav-links');
+            if (!document.querySelector('.mobile-menu-toggle')) {
+                const toggle = document.createElement('button');
+                toggle.className = 'mobile-menu-toggle';
+                toggle.innerHTML = '<i class="fas fa-bars"></i>';
+                toggle.style.cssText = 'background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text);';
+                toggle.onclick = () => {
+                    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+                    nav.style.flexDirection = 'column';
+                    nav.style.position = 'absolute';
+                    nav.style.top = '100%';
+                    nav.style.left = '0';
+                    nav.style.right = '0';
+                    nav.style.background = 'var(--white)';
+                    nav.style.padding = '20px';
+                    nav.style.boxShadow = '0 5px 10px rgba(0,0,0,0.1)';
+                    
+                };
+                document.querySelector('nav').appendChild(toggle);
+            }
+            // Zamknij menu po kliknięciu w link
+            nav.querySelectorAll('a').forEach(link => {
+                link.onclick = () => {
+                    nav.classList.remove('active');
+            };
+        });
+        } else {
+            // Przywróć menu na desktopie
+            const nav = document.querySelector('.nav-links');
+            nav.classList.remove('active');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            if (toggle) toggle.remove();
+    }
+}
+    window.addEventListener('resize', createMobileMenu);
+    createMobileMenu();
+    */
+    function createMobileMenu() {
+        const nav = document.querySelector('.nav-links');
+        const navParent = document.querySelector('nav');
+        let toggle = document.querySelector('.mobile-menu-toggle');
+
+        if (window.innerWidth <= 768) {
+            if (!toggle) {
+                toggle = document.createElement('button');
+                toggle.className = 'mobile-menu-toggle';
+                toggle.innerHTML = '<i class="fas fa-bars"></i>';
+                toggle.style.cssText = 'background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text);';
+                navParent.appendChild(toggle);
+            }
+        // Hamburger klik - przełącz klasę active
+        toggle.onclick = () => {
+            nav.classList.toggle('active');
+        };
+        // Kliknięcie w link (ale nie Panel) - zamknij menu
+        nav.querySelectorAll('a').forEach(link => {
+            // Najpierw usuwamy stare eventy, żeby nie dublować
+            link.removeEventListener('_closeMenu', link._closeMenuHandler || (()=>{}));
+            if (!link.classList.contains('admin-link')) {
+                link._closeMenuHandler = function() {
+                    nav.classList.remove('active');
+                };
+                link.addEventListener('click', link._closeMenuHandler, false);
+                // Oznacz event, by można było go usunąć przy kolejnym wywołaniu
+                link._closeMenu = true;
+            };
+        });
+    } else {
+        nav.classList.remove('active');
+        if (toggle) toggle.remove();
+    }
+}
+window.addEventListener('resize', createMobileMenu);
+createMobileMenu();
+
+    // Add loading animation
+    window.addEventListener('load', () => {
+        document.body.style.opacity = '0';
+        setTimeout(() => {
+            document.body.style.transition = 'opacity 0.5s';
+            document.body.style.opacity = '1';
+        }, 100);
+    });
+
+    // Add newsletter functionality
+    function addNewsletterSection() {
+        const footer = document.querySelector('footer .container');
+        const newsletterHTML = `
+            <div style="background: var(--secondary); padding: 40px; border-radius: 15px; margin-bottom: 40px; text-align: center;">
+                <h3 style="color: white; margin-bottom: 15px; font-size: 1.8rem;">
+                    <i class="fas fa-envelope"></i> Zapisz się do Newslettera
+                </h3>
+                <p style="color: rgba(255,255,255,0.9); margin-bottom: 20px;">
+                    Otrzymuj ekskluzywne promocje i porady o masażu!
+                </p>
+                <form id="newsletter-form" style="display: flex; gap: 10px; max-width: 500px; margin: 0 auto; flex-wrap: wrap; justify-content: center;">
+                    <input type="email" placeholder="Twój adres email" required style="flex: 1; min-width: 250px; padding: 12px 20px; border: none; border-radius: 25px; font-size: 1rem;">
+                    <button type="submit" style="padding: 12px 30px; background: var(--accent); color: white; border: none; border-radius: 25px; font-weight: bold; cursor: pointer; transition: transform 0.3s;">
+                        Zapisz się
+                    </button>
+                </form>
+            </div>
+        `;
+        footer.insertAdjacentHTML('afterbegin', newsletterHTML);
+
+        document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            alert(`Dziękujemy za zapis! Potwierdzenie zostało wysłane na: ${email}`);
+            this.reset();
+        });
+    }
+
+    addNewsletterSection();
+
+    // Add floating WhatsApp button
+    function addWhatsAppButton() {
+        const whatsappBtn = document.createElement('a');
+        whatsappBtn.href = 'https://wa.me/48123456789';
+        whatsappBtn.target = '_blank';
+        whatsappBtn.innerHTML = '<i class="fab fa-whatsapp"></i>';
+        whatsappBtn.style.cssText = `
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            z-index: 2000;
+            transition: transform 0.3s;
+            text-decoration: none;
+        `;
+        whatsappBtn.onmouseover = () => whatsappBtn.style.transform = 'scale(1.1)';
+        whatsappBtn.onmouseout = () => whatsappBtn.style.transform = 'scale(1)';
+        document.body.appendChild(whatsappBtn);
+    }
+
+    addWhatsAppButton();
+
+    // Add scroll to top button
+    function addScrollToTop() {
+        const scrollBtn = document.createElement('button');
+        scrollBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+        scrollBtn.style.cssText = `
+            position: fixed;
+            bottom: 160px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            z-index: 2000;
+            display: none;
+            transition: all 0.3s;
+        `;
+        scrollBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollBtn.style.display = 'flex';
+                scrollBtn.style.alignItems = 'center';
+                scrollBtn.style.justifyContent = 'center';
+            } else {
+                scrollBtn.style.display = 'none';
+            }
+        });
+        
+        document.body.appendChild(scrollBtn);
+    }
+
+    addScrollToTop();
+
+    // Add cookie consent banner
+    function addCookieConsent() {
+        if (!sessionStorage.getItem('cookiesAccepted')) {
+            const cookieBanner = document.createElement('div');
+            cookieBanner.style.cssText = `
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: var(--dark);
+                color: white;
+                padding: 20px;
+                z-index: 4000;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 15px;
+                box-shadow: 0 -5px 20px rgba(0,0,0,0.3);
+            `;
+            cookieBanner.innerHTML = `
+                <p style="margin: 0; flex: 1; min-width: 250px;">
+                    <i class="fas fa-cookie-bite"></i> Ta strona używa ciasteczek aby zapewnić najlepsze doświadczenia. 
+                    <a href="#" style="color: var(--secondary); text-decoration: underline;">Polityka prywatności</a>
+                </p>
+                <button id="accept-cookies" style="padding: 10px 25px; background: var(--secondary); color: white; border: none; border-radius: 25px; font-weight: bold; cursor: pointer;">
+                    Akceptuję
+                </button>
+            `;
+            document.body.appendChild(cookieBanner);
+
+            document.getElementById('accept-cookies').onclick = () => {
+                sessionStorage.setItem('cookiesAccepted', 'true');
+                cookieBanner.remove();
+            };
+        }
+    }
+
+    addCookieConsent();
+
+    // Add stats counter animation
+    function animateStats() {
+        const statsSection = document.createElement('section');
+        statsSection.className = 'section';
+        statsSection.style.background = 'linear-gradient(135deg, var(--primary), var(--secondary))';
+        statsSection.style.color = 'white';
+        statsSection.innerHTML = `
+            <div class="container">
+                <h2 class="section-title" style="color: white;">Relaks w Liczbach</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: center;">
+                    <div>
+                        <div style="font-size: 3rem; font-weight: bold;" class="counter" data-target="5000">0</div>
+                        <p style="font-size: 1.2rem; opacity: 0.9;">Zadowolonych Klientów</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 3rem; font-weight: bold;" class="counter" data-target="15">0</div>
+                        <p style="font-size: 1.2rem; opacity: 0.9;">Lat Doświadczenia</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 3rem; font-weight: bold;" class="counter" data-target="20">0</div>
+                        <p style="font-size: 1.2rem; opacity: 0.9;">Rodzajów Masaży</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 3rem; font-weight: bold;" class="counter" data-target="98">0</div>
+                        <p style="font-size: 1.2rem; opacity: 0.9;">% Pozytywnych Opinii</p>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        const testimonials = document.querySelector('.testimonials');
+        testimonials.parentNode.insertBefore(statsSection, testimonials);
+
+        // Animate counters
+        const counters = document.querySelectorAll('.counter');
+        const observerStats = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && entry.target.textContent === '0') {
+                    const target = parseInt(entry.target.dataset.target);
+                    const duration = 2000;
+                    const step = target / (duration / 16);
+                    let current = 0;
+                    
+                    const timer = setInterval(() => {
+                        current += step;
+                        if (current >= target) {
+                            entry.target.textContent = target.toLocaleString();
+                            clearInterval(timer);
+                        } else {
+                            entry.target.textContent = Math.floor(current).toLocaleString();
+                        }
+                    }, 16);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(counter => observerStats.observe(counter));
+    }
+
+    animateStats();
+
+    // Add FAQ section
+    function addFAQSection() {
+        const faqSection = document.createElement('section');
+        faqSection.className = 'section';
+        faqSection.style.background = 'var(--white)';
+        faqSection.innerHTML = `
+            <div class="container">
+                <h2 class="section-title">Najczęściej Zadawane Pytania</h2>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div class="faq-item" style="margin-bottom: 20px; background: var(--light-green); border-radius: 10px; overflow: hidden;">
+                        <div class="faq-question" style="padding: 20px; cursor: pointer; font-weight: bold; color: var(--primary); display: flex; justify-content: space-between; align-items: center;">
+                            <span>Czy potrzebuję rezerwacji?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: all 0.3s;">
+                            <p style="padding-bottom: 20px;">Tak, zalecamy wcześniejszą rezerwację telefonicznie lub przez formularz online, aby zagwarantować dostępność w preferowanym terminie.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" style="margin-bottom: 20px; background: var(--light-green); border-radius: 10px; overflow: hidden;">
+                        <div class="faq-question" style="padding: 20px; cursor: pointer; font-weight: bold; color: var(--primary); display: flex; justify-content: space-between; align-items: center;">
+                            <span>Jak długo trwa masaż?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: all 0.3s;">
+                            <p style="padding-bottom: 20px;">Standardowy masaż trwa 60 minut. Oferujemy również sesje 30-minutowe (krótsze) oraz 90-minutowe (rozszerzone).</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" style="margin-bottom: 20px; background: var(--light-green); border-radius: 10px; overflow: hidden;">
+                        <div class="faq-question" style="padding: 20px; cursor: pointer; font-weight: bold; color: var(--primary); display: flex; justify-content: space-between; align-items: center;">
+                            <span>Czy mogę przyjść z bólem pleców?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: all 0.3s;">
+                            <p style="padding-bottom: 20px;">Oczywiście! Masaż leczniczy jest idealny dla osób z dolegliwościami bólowymi. Nasi terapeuci dostosują technikę do Twoich potrzeb.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" style="margin-bottom: 20px; background: var(--light-green); border-radius: 10px; overflow: hidden;">
+                        <div class="faq-question" style="padding: 20px; cursor: pointer; font-weight: bold; color: var(--primary); display: flex; justify-content: space-between; align-items: center;">
+                            <span>Jakie są formy płatności?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: all 0.3s;">
+                            <p style="padding-bottom: 20px;">Akceptujemy płatności gotówką, kartą oraz BLIK. Vouchery można również zakupić online.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        const contact = document.querySelector('.contact-section');
+        contact.parentNode.insertBefore(faqSection, contact);
+
+        // FAQ accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+
+                // Close all
+                document.querySelectorAll('.faq-answer').forEach(a => {
+                    a.style.maxHeight = '0';
+                    a.previousElementSibling.querySelector('i').style.transform = 'rotate(0deg)';
+                });
+
+                // Open clicked if it was closed
+                if (!isOpen) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+    }
+
+    addFAQSection();
+
+    // Add booking calendar preview (visual only)
+    function enhanceBookingForm() {
+        const form = document.querySelector('.contact-form');
+        const calendarPreview = document.createElement('div');
+        calendarPreview.style.cssText = `
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+        `;
+        calendarPreview.innerHTML = `
+            <h4 style="color: var(--primary); margin-bottom: 15px;">
+                <i class="fas fa-calendar-alt"></i> Dostępne Terminy
+            </h4>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                <button type="button" class="time-slot" style="padding: 10px; background: var(--light-green); border: 2px solid var(--secondary); border-radius: 8px; cursor: pointer; transition: all 0.3s;">9:00</button>
+                <button type="button" class="time-slot" style="padding: 10px; background: var(--light-green); border: 2px solid var(--secondary); border-radius: 8px; cursor: pointer; transition: all 0.3s;">11:00</button>
+                <button type="button" class="time-slot" style="padding: 10px; background: var(--light-green); border: 2px solid var(--secondary); border-radius: 8px; cursor: pointer; transition: all 0.3s;">13:00</button>
+                <button type="button" class="time-slot" style="padding: 10px; background: var(--light-green); border: 2px solid var(--secondary); border-radius: 8px; cursor: pointer; transition: all 0.3s;">15:00</button>
+                <button type="button" class="time-slot" style="padding: 10px; background: var(--light-green); border: 2px solid var(--secondary); border-radius: 8px; cursor: pointer; transition: all 0.3s;">17:00</button>
+                <button type="button" class="time-slot" style="padding: 10px; background: #ffebee; border: 2px solid #e74c3c; border-radius: 8px; cursor: not-allowed; opacity: 0.6;">19:00 <small>(zajęte)</small></button>
+            </div>
+            <p style="font-size: 0.85rem; margin-top: 15px; opacity: 0.7;">Kliknij godzinę aby wybrać termin</p>
+        `;
+        form.appendChild(calendarPreview);
+
+        document.querySelectorAll('.time-slot').forEach(slot => {
+            slot.addEventListener('click', function() {
+                if (!this.disabled) {
+                    document.querySelectorAll('.time-slot').forEach(s => {
+                        s.style.background = 'var(--light-green)';
+                        s.style.borderColor = 'var(--secondary)';
+                    });
+                    this.style.background = 'var(--secondary)';
+                    this.style.borderColor = 'var(--primary)';
+                    this.style.color = 'white';
+                }
+            });
+        });
+    }
+
+    enhanceBookingForm();
+
+    console.log('%c✨ Strona w pełni załadowana!', 'color: #2d5016; font-size: 16px; font-weight: bold;');
+    console.log('%c📱 Wszystkie funkcje aktywne: MFA, Gallery, Booking, FAQ, Stats', 'color: #4a7c2c; font-size: 12px;');
+</script>
+```
+
+</body>
+</html>

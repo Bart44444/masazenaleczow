@@ -1,0 +1,1468 @@
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:events:486
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._notifyError (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/base/connection.js:247:12)
+    at Connection._handleFatalError (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/base/connection.js:178:10)
+    at Connection._handleNetworkError (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/base/connection.js:191:10)
+    at Socket.emit (node:events:508:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:events:486
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._notifyError (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/base/connection.js:247:12)
+    at Connection._handleFatalError (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/base/connection.js:178:10)
+    at Connection._handleNetworkError (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/base/connection.js:191:10)
+    at Socket.emit (node:events:508:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v24.6.0
+node:events:486
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._notifyError (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/base/connection.js:247:12)
+    at Connection._handleFatalError (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/base/connection.js:178:10)
+    at Connection._handleNetworkError (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/base/connection.js:191:10)
+    at Socket.emit (node:events:508:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v24.6.0
+node:events:486
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._notifyError (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/base/connection.js:247:12)
+    at Connection._handleFatalError (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/base/connection.js:178:10)
+    at Connection._handleNetworkError (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/base/connection.js:191:10)
+    at Socket.emit (node:events:508:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v24.6.0
+node:events:486
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._notifyError (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/base/connection.js:247:12)
+    at Connection._handleFatalError (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/base/connection.js:178:10)
+    at Connection._handleNetworkError (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/base/connection.js:191:10)
+    at Socket.emit (node:events:508:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v24.6.0
+Services error: Error: Unknown column 'active' in 'WHERE'
+    at PromisePoolConnection.query (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/promise/connection.js:29:22)
+    at /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:87:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'SELECT * FROM services WHERE active = 1 ORDER BY display_order',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'active' in 'WHERE'"
+}
+Services error: Error: Unknown column 'active' in 'WHERE'
+    at PromisePoolConnection.query (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/promise/connection.js:29:22)
+    at /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:87:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'SELECT * FROM services WHERE active = 1 ORDER BY display_order',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'active' in 'WHERE'"
+}
+Services error: Error: Unknown column 'active' in 'WHERE'
+    at PromisePoolConnection.query (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/promise/connection.js:29:22)
+    at /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:87:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'SELECT * FROM services WHERE active = 1 ORDER BY display_order',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'active' in 'WHERE'"
+}
+Booking error: Error: Unknown column 'preferred_date' in 'INSERT INTO'
+    at PromisePoolConnection.query (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/promise/connection.js:29:22)
+    at /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:127:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO bookings (name, phone, email, service, preferred_date, message, status, created_at) \n' +
+    "       VALUES ('Bartek Test1', '345252', 'bartosz.sebastian.tarka@gmail.com', 'Masaż Leczniczy', '2025-10-29', 'zzzzzzz', 'pending', NOW())",
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'preferred_date' in 'INSERT INTO'"
+}
+Booking error: Error: Unknown column 'preferred_date' in 'INSERT INTO'
+    at PromisePoolConnection.query (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/promise/connection.js:29:22)
+    at /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:127:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO bookings (name, phone, email, service, preferred_date, message, status, created_at) \n' +
+    "       VALUES ('Bartek Test1', '345252', 'bartosz.sebastian.tarka@gmail.com', 'Masaż Leczniczy', '2025-10-29', 'zzzzzzz', 'pending', NOW())",
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'preferred_date' in 'INSERT INTO'"
+}
+Services error: Error: Unknown column 'active' in 'WHERE'
+    at PromisePoolConnection.query (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/promise/connection.js:29:22)
+    at /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:87:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'SELECT * FROM services WHERE active = 1 ORDER BY display_order',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'active' in 'WHERE'"
+}
+Services error: Error: Unknown column 'active' in 'WHERE'
+    at PromisePoolConnection.query (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/promise/connection.js:29:22)
+    at /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:87:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'SELECT * FROM services WHERE active = 1 ORDER BY display_order',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'active' in 'WHERE'"
+}
+Services error: Error: Unknown column 'active' in 'WHERE'
+    at PromisePoolConnection.query (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/promise/connection.js:29:22)
+    at /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:87:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'SELECT * FROM services WHERE active = 1 ORDER BY display_order',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'active' in 'WHERE'"
+}
+Services error: Error: Unknown column 'active' in 'WHERE'
+    at PromisePoolConnection.query (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/promise/connection.js:29:22)
+    at /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:87:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'SELECT * FROM services WHERE active = 1 ORDER BY display_order',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'active' in 'WHERE'"
+}
+Services error: Error: Unknown column 'display_order' in 'ORDER BY'
+    at PromisePoolConnection.query (/home/srv96854/nodevenv/domains/srv96854.seohost.com.pl/nodejs_backend/24/lib/node_modules/mysql2/lib/promise/connection.js:29:22)
+    at /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:87:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'SELECT * FROM services WHERE active = 1 ORDER BY display_order',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'display_order' in 'ORDER BY'"
+}
+❌ Email transporter error: nodemailer.createTransporter is not a function
+⚠️ Email transporter not configured - skipping email send
+⚠️ Failed to send confirmation email to bartosz.sebastian.tarka@gmail.com
+⚠️ Failed to send admin notification
+❌ Email transporter error: nodemailer.createTransporter is not a function
+⚠️ Email transporter not configured - skipping email send
+⚠️ Failed to send confirmation email to bartosz.sebastian.tarka@gmail.com
+⚠️ Failed to send admin notification
+/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:64
+    });
+    ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (node:internal/modules/cjs/loader:1669:18)
+    at Module._compile (node:internal/modules/cjs/loader:1712:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+
+Node.js v24.6.0
+/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:63
+    });
+    ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (node:internal/modules/cjs/loader:1669:18)
+    at Module._compile (node:internal/modules/cjs/loader:1712:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+
+Node.js v24.6.0
+/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:63
+    });
+    ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (node:internal/modules/cjs/loader:1669:18)
+    at Module._compile (node:internal/modules/cjs/loader:1712:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+
+Node.js v24.6.0
+/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:63
+    });
+    ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (node:internal/modules/cjs/loader:1669:18)
+    at Module._compile (node:internal/modules/cjs/loader:1712:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+
+Node.js v24.6.0
+/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:63
+    });
+    ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (node:internal/modules/cjs/loader:1669:18)
+    at Module._compile (node:internal/modules/cjs/loader:1712:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+
+Node.js v24.6.0
+/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:63
+    });
+    ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (node:internal/modules/cjs/loader:1669:18)
+    at Module._compile (node:internal/modules/cjs/loader:1712:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+
+Node.js v24.6.0
+/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:63
+    });
+    ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (node:internal/modules/cjs/loader:1669:18)
+    at Module._compile (node:internal/modules/cjs/loader:1712:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+
+Node.js v24.6.0
+/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:63
+    });
+    ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (node:internal/modules/cjs/loader:1669:18)
+    at Module._compile (node:internal/modules/cjs/loader:1712:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+
+Node.js v24.6.0
+/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:63
+    });
+    ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (node:internal/modules/cjs/loader:1669:18)
+    at Module._compile (node:internal/modules/cjs/loader:1712:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+
+Node.js v24.6.0
+/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:63
+    });
+    ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (node:internal/modules/cjs/loader:1669:18)
+    at Module._compile (node:internal/modules/cjs/loader:1712:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+
+Node.js v24.6.0
+/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:63
+    });
+    ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (node:internal/modules/cjs/loader:1669:18)
+    at Module._compile (node:internal/modules/cjs/loader:1712:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+
+Node.js v24.6.0
+/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:63
+    });
+    ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (node:internal/modules/cjs/loader:1669:18)
+    at Module._compile (node:internal/modules/cjs/loader:1712:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+
+Node.js v24.6.0
+/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:63
+    });
+    ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (node:internal/modules/cjs/loader:1669:18)
+    at Module._compile (node:internal/modules/cjs/loader:1712:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+
+Node.js v24.6.0
+/home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:63
+    });
+    ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (node:internal/modules/cjs/loader:1669:18)
+    at Module._compile (node:internal/modules/cjs/loader:1712:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+
+Node.js v24.6.0
+node:internal/modules/esm/module_job:503
+      throw new ERR_REQUIRE_ASYNC_MODULE(filename, parentFilename);
+      ^
+
+Error [ERR_REQUIRE_ASYNC_MODULE]: require() cannot be used on an ESM graph with top-level await. Use import() instead. To see where the top-level await comes from, use --experimental-print-required-tla.
+  From /usr/local/lsws/fcgi-bin/lsnode.js 
+  Requiring /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js 
+    at ModuleJobSync.runSync (node:internal/modules/esm/module_job:503:13)
+    at ModuleLoader.importSyncForRequire (node:internal/modules/esm/loader:441:47)
+    at loadESMFromCJS (node:internal/modules/cjs/loader:1567:24)
+    at Module._compile (node:internal/modules/cjs/loader:1720:5)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12) {
+  code: 'ERR_REQUIRE_ASYNC_MODULE'
+}
+
+Node.js v24.6.0
+node:internal/modules/esm/module_job:503
+      throw new ERR_REQUIRE_ASYNC_MODULE(filename, parentFilename);
+      ^
+
+Error [ERR_REQUIRE_ASYNC_MODULE]: require() cannot be used on an ESM graph with top-level await. Use import() instead. To see where the top-level await comes from, use --experimental-print-required-tla.
+  From /usr/local/lsws/fcgi-bin/lsnode.js 
+  Requiring /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js 
+    at ModuleJobSync.runSync (node:internal/modules/esm/module_job:503:13)
+    at ModuleLoader.importSyncForRequire (node:internal/modules/esm/loader:441:47)
+    at loadESMFromCJS (node:internal/modules/cjs/loader:1567:24)
+    at Module._compile (node:internal/modules/cjs/loader:1720:5)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12) {
+  code: 'ERR_REQUIRE_ASYNC_MODULE'
+}
+
+Node.js v24.6.0
+Booking error: ReferenceError: sendBookingConfirmationEmail is not defined
+    at /home/srv96854/domains/srv96854.seohost.com.pl/nodejs_backend/server.js:334:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+⚠️ Email transporter not configured - skipping admin notification
+⚠️ Email transporter not configured - skipping admin notification
+⚠️ Email transporter not configured - skipping admin notification
+❌ Email transporter error: nodemailer.createTransporter is not a function
+⚠️ Email transporter not configured - skipping admin notification
+❌ Email transporter error: nodemailer.createTransporter is not a function
+❌ Email transporter error: nodemailer.createTransporter is not a function
+⚠️ Email transporter not configured - skipping admin notification
